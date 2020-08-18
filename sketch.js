@@ -7,7 +7,7 @@ let personagem;
 function preload() {
   imagemCenario = loadImage('./imagens/cenario/floresta.png');
   imagemPersonagem = loadImage('./imagens/personagem/correndo.png');
-  somDoJogo = loadSound('./sons/trilha_jogo.mp3');
+  somDoJogo = new Audio('./sons/trilha_jogo.mp3');
 }
 
 function setup() {
@@ -15,7 +15,7 @@ function setup() {
   cenario = new Cenario(imagemCenario, 2);
   frameRate(40);
   personagem = new Personagem(imagemPersonagem);
-  somDoJogo.loop();
+  somDoJogo.play();
 }
  
 function draw() {  
