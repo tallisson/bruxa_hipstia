@@ -11,7 +11,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);  
+  createCanvas(windowWidth-10, windowHeight-10);  
   cenario = new Cenario(imagemCenario, 2);
   frameRate(40);
   personagem = new Personagem(imagemPersonagem);
